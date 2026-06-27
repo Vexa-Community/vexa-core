@@ -1,3 +1,8 @@
+[![CI](https://github.com/Vexa-Community/vexa-core/actions/workflows/ci.yml/badge.svg)](https://github.com/Vexa-Community/vexa-core/actions/workflows/ci.yml)
+![License](https://img.shields.io/badge/license-Apache--2.0-blue)
+![Status](https://img.shields.io/badge/status-alpha-orange)
+![Node](https://img.shields.io/badge/node-%3E%3D22-green)
+
 # VEXA Core
 
 VEXA Core is an open-source TypeScript orchestration engine for structured teams of AI agents.
@@ -29,8 +34,8 @@ Pino · Vitest · Commander · js-yaml · ESLint + Prettier.
 
 ## Requirements
 
-- Node.js 22+ (developed against Node 26)
-- pnpm
+- Node.js 22+
+- pnpm 10+
 
 ## Quick start
 
@@ -81,13 +86,14 @@ pnpm cli doctor
 
 | Command | Description |
 |---|---|
-| `vexa init` | Scaffold `.env.example`, `agents/`, and an example project |
-| `vexa doctor` | Check env, DB, agent YAMLs, provider config, artifacts dir |
-| `vexa project create` | Create a project (flags or interactive prompts) |
-| `vexa run <project.yaml>` | Run a project from YAML and stream progress |
-| `vexa run status <runId>` | Show run status |
-| `vexa run cancel <runId>` | Cancel a run |
-| `vexa agents list` | List agents loaded from `agents/` |
+| `pnpm cli init` | Scaffold `.env.example`, `agents/`, and an example project |
+| `pnpm cli doctor` | Check env, DB, agent YAMLs, provider config, artifacts dir |
+| `pnpm cli project create` | Create a project (flags or interactive prompts) |
+| `pnpm cli run <project.yaml>` | Run a project from YAML and stream progress |
+| `pnpm cli run status <runId>` | Show run status |
+| `pnpm cli run cancel <runId>` | Cancel a run |
+| `pnpm cli agents list` | List agents loaded from `agents/` |
+The global `vexa` command will be available after the package is published or linked locally. During development, use `pnpm cli <command>`.
 
 ## REST API
 
