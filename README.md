@@ -36,14 +36,52 @@ Pino · Vitest · Commander · js-yaml · ESLint + Prettier.
 
 - Node.js 22+
 - pnpm 10+
-
+  
 ## Quick start
+
+Install dependencies:
 
 ```bash
 pnpm install
+```
+
+Create your local environment file.
+
+### Linux / macOS
+
+```bash
 cp .env.example .env
-pnpm db:generate        # generate SQL migrations from the Drizzle schema
-pnpm dev                # start the API (runs migrations on boot)
+```
+
+### Windows PowerShell
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Run the database migrations:
+
+```bash
+pnpm db:migrate
+```
+
+Start the development server:
+
+```bash
+pnpm dev
+```
+
+On Windows PowerShell, replace the copy command with:
+
+Copy-Item .env.example .env
+
+Run the bundled example with the deterministic mock provider:
+
+pnpm cli run examples/landing-page-project/project.yaml
+
+Check the environment:
+
+pnpm cli doctor
 ```
 
 Run the bundled example end-to-end with the CLI (uses the deterministic mock provider):
