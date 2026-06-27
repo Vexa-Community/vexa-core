@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.db
+*.db-shm
+*.db-wal
+.env
+artifacts/
+coverage/
+.agents/
+.claude/
+.omc/
+.pnpm-store/

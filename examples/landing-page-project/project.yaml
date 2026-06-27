@@ -1,0 +1,13 @@
+name: SaaS Landing Page
+goal: "Create a technical architecture plan for a modern, accessible SaaS landing page with a dark premium design."
+description: "MVP example project demonstrating VEXA Core's three-agent workflow."
+agents:
+  - ceo
+  - frontend-developer
+  - qa-reviewer
+run:
+  maxModelCalls: 20
+  maxCost: 1.00
+expectedArtifacts:
+  - name: frontend-architecture
+    type: markdown
